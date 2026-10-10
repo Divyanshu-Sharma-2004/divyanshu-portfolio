@@ -1,0 +1,78 @@
+import SiteHeader from "./site-header";
+import HeroHeadline from "./hero-headline";
+import SkillGrid from "./skill-grid";
+import ProjectCarousel from "./project-carousel";
+import ContactSection from "./contact-section";
+
+const experience = [  {    date: "AUG 2026 — PRESENT",    role: "Manual Testing Intern",    company: "Codeacious Technologies",    points: [      "Conduct manual, functional, regression, and integration testing of Coot AI, an AI-powered desktop application.",      "Create test cases, execute QA checklists, and document defects using GitHub Issues.",      "Test AI models, Google Workspace integrations, connectors, File Manager, and other application features.",      "Validate bug fixes, investigate unexpected behavior, and contribute to improving application quality and user experience.",    ],  },  {    date: "AUG 2025 — JUL 2026",    role: "Technical Writer",    company: "Aryson Technologies",    points: [      "Reviewed software features against documentation to identify inconsistencies, gaps, and errors before publishing user-facing content, collaborating with developers to verify accuracy.",      "Documented reproduction steps, use-case scenarios, and troubleshooting guides.",    ],  },  {    date: "MAY 2025 — JUL 2025",    role: "Trainee, Full Stack Java Web Programming",    company: "Anudip Foundation",    points: [      "Learned Java, JDBC, Hibernate, JSP, Servlets, Swing, HTML, CSS, and JavaScript, applying SDLC and Agile/Scrum concepts throughout development.",      "Developed and manually verified Java desktop and web applications with database connectivity, checking functional correctness before deployment.",    ],  },];
+
+
+const projects = [  { title: "Bank Management System", category: "Java — desktop application", description: "A Swing and JDBC banking simulator with account registration, card and PIN login, deposits, withdrawals, fast cash, balance enquiries, mini statements, and PIN changes.", tags: ["Java", "Swing", "JDBC", "Banking"], url: "https://github.com/Divyanshu-Sharma-2004/Bank-Management-System" },  { title: "Bootstrap Website", category: "Responsive website", description: "iCoder is a responsive multi-page website built with HTML, CSS, Bootstrap, and JavaScript, with navigation, modals, and a contact form.", tags: ["HTML", "CSS", "Bootstrap", "JavaScript"], url: "https://github.com/Divyanshu-Sharma-2004/Bootstrap-Website" },  { title: "Currency Converter", category: "JavaScript — web app", description: "A browser-based currency converter that lets users choose currencies, enter an amount, and request current exchange rates from an API.", tags: ["JavaScript", "HTML", "CSS", "API"], url: "https://github.com/Divyanshu-Sharma-2004/CurrencyConvertor" },  { title: "Employee Management System", category: "Java — desktop application", description: "A Swing and Hibernate desktop app for managing employee records in MySQL, with create, read, update, delete, lookup, and manual test workflows.", tags: ["Java", "Swing", "Hibernate", "MySQL"], url: "https://github.com/Divyanshu-Sharma-2004/employee-management-system" },  { title: "Foodie", category: "Food ordering — website", description: "A responsive food ordering storefront with an interactive cart, quantity controls, item removal, and live price and item-count totals.", tags: ["HTML", "CSS", "JavaScript", "Cart UI"], url: "https://github.com/Divyanshu-Sharma-2004/Foodie" },  { title: "Guess Number Game", category: "Python — game", description: "A number guessing game that chooses a value from 1 to 100 and gives players ten attempts, with higher/lower feedback and proximity hints.", tags: ["Python", "Random", "Game"], url: "https://github.com/Divyanshu-Sharma-2004/GuessNumberGame" },  { title: "NeuroNexus Tasks", category: "Python — mini projects", description: "A collection of small Python exercises, including a calculator, to-do list, password generator, and rock-paper-scissors game.", tags: ["Python", "Utilities", "Games"], url: "https://github.com/Divyanshu-Sharma-2004/NeuroNexus" },  { title: "Random Password Generator", category: "Python — utility", description: "A command-line script that creates a password of the requested length from uppercase and lowercase letters, digits, and punctuation.", tags: ["Python", "Random", "CLI"], url: "https://github.com/Divyanshu-Sharma-2004/RandomPasswordGenerator" },  { title: "Robo Cafe", category: "Python — ordering system", description: "A cafe ordering flow with voice feedback and MySQL storage that guides customers through a menu, confirms their order, and saves order details.", tags: ["Python", "MySQL", "Voice UI"], url: "https://github.com/Divyanshu-Sharma-2004/Robo_Cafe" },  { title: "Rock Paper Scissors", category: "JavaScript — browser game", description: "A browser game where the player faces a computer opponent, sees round results, and tracks both scores.", tags: ["JavaScript", "HTML", "CSS", "Game"], url: "https://github.com/Divyanshu-Sharma-2004/RockPaperScissor_Game" },  { title: "Tic Tac Toe", category: "JavaScript — browser game", description: "A two-player 3×3 game with alternating X and O moves, win detection, and reset/new-game controls.", tags: ["JavaScript", "HTML", "CSS", "Game"], url: "https://github.com/Divyanshu-Sharma-2004/TicTacToe_Game" },  { title: "Coot AI Testing", category: "AI — quality assurance", description: "Manual QA of an LLM desktop app across model configurations and integrations, checking workflows, defects, and bug fixes.", tags: ["LLM testing", "Test design", "GitHub Issues", "QA"], url: "#experience", linkText: "See experience ?" },];
+
+
+export default function Home() {  return (    <main className="page-shell">      <div className="container">        <SiteHeader />        <section className="hero" id="home">          <div className="hero-copy-block">            <div className="eyebrow eyebrow-no-rule">QA &middot; Manual testing &middot; LLMs</div>            <HeroHeadline />            <p className="hero-copy">              I&apos;m Divyanshu Sharma, a QA professional who enjoys finding the details that make products work better—from everyday workflows to AI-powered applications.            </p>            <div className="hero-actions">              <a className="button button-quiet" href="/Divyanshu_resume.pdf" download>Download resume ↓</a>              <div className="social-links" aria-label="Social media links">              <a className="social-link" href="https://github.com/Divyanshu-Sharma-2004" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.06c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.62 1.21 3.26.92.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.25-5.11 5.52.4.35.76 1.03.76 2.08V22c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z"/>
+</svg>
+</a>              <a className="social-link" href="https://www.linkedin.com/in/divyanshu-sharma-39720629a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.9H4.98V9.42h2.95v9.48ZM6.46 8.13a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.45 10.77h-2.94v-4.61c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.78 1.2-1.78 2.44v4.69H9.71V9.42h2.82v1.3h.04c.39-.75 1.35-1.54 2.78-1.54 2.98 0 3.56 1.96 3.56 4.5v5.22Z"/>
+</svg>
+</a>              <a className="social-link" href="https://www.instagram.com/divyanshusharma_2004?stkn=MWkyMm9lbmo5cnUzbA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
+</svg>
+</a>              </div>            </div>          </div>          <figure className="hero-portrait">            <img src="/Divyanshu.png" alt="Portrait of Divyanshu Sharma" />          </figure>        </section>        <section className="section" id="about">          <div className="section-heading">            <div>
+<div className="eyebrow">A little about me</div>
+<h2>Curious by nature.<br />Careful by practice.</h2>
+</div>            <p className="section-note">A quick look at the experience, learning, and tools shaping my work in quality assurance.</p>          </div>          <p className="about-intro">I&apos;m a quality assurance professional with experience in manual software testing, technical writing, and Java development. In my current role, I test an AI application across local, cloud, and network model setups, checking workflows, edge cases, and fixes. I&apos;m also pursuing my MCA at Chandigarh University.</p>          <div className="about-cards" aria-label="About me highlights">            <article className="about-card">              <span className="about-card-number">01 / EDUCATION</span>              <h3>Learning with purpose</h3>              <ul>
+<li>MCA — Chandigarh University</li>
+<li>BCA — CCS University</li>
+<li>Diploma in French — Delhi University</li>
+</ul>            </article>            <article className="about-card">              <span className="about-card-number">02 / EXPERIENCE</span>              <h3>Quality across the process</h3>              <ul>
+<li>Manual Testing Intern — Codeacious Technologies</li>
+<li>Technical Writer — Aryson Technologies</li>
+<li>Java Web Programming Trainee — Anudip Foundation</li>
+</ul>            </article>            <article className="about-card">              <span className="about-card-number">03 / TECH STACK</span>              <h3>Tools I work with</h3>              <ul>
+<li>Java — HTML — CSS — JavaScript</li>
+<li>JDBC — Hibernate — JSP — Servlets</li>
+<li>Jira — Ollama — vLLM</li>
+</ul>            </article>            <article className="about-card">              <span className="about-card-number">04 / LANGUAGES</span>              <h3>Communication matters</h3>              <ul>
+<li>English</li>
+<li>Hindi</li>
+<li>French — diploma studies</li>
+</ul>            </article>          </div>        </section>        <section className="section" id="skills">          <div className="skills-heading">
+<div className="skills-title">
+<div className="eyebrow eyebrow-no-rule">What I bring</div>
+<h2>Skills <span>&amp; toolkit</span>
+</h2>
+</div>
+<p>Good QA starts with curiosity and ends with a bug report someone can act on. I test software the way real users use it, from functional and regression checks to edge cases, and I log what I find with clear steps to reproduce. My experience with Java, JSP, Hibernate, and JavaScript helps me see how an application is built, and my technical writing background helps me explain issues and products precisely.</p>
+</div>          <SkillGrid />        </section>        <section className="section" id="experience">          <div className="section-heading">
+<div>
+<div className="eyebrow">Where I&apos;ve been</div>
+<h2>Experience</h2>
+</div>
+<p className="section-note">I started by checking software against its documentation, learned how applications are built, and now test them hands-on. Each role has sharpened the same skill: noticing what&apos;s off and explaining it clearly.</p>
+</div>          <div className="timeline">{experience.map((item) => <article className="timeline-item" key={item.role}>
+<div className="timeline-date">{item.date}</div>
+<div>
+<h3 className="timeline-role">{item.role}</h3>
+<div className="timeline-company">{item.company}</div>
+<ul className="timeline-points">{item.points.map((point) => <li key={point}>{point}</li>)}</ul>
+</div>
+</article>)}</div>        </section>        <section className="section" id="projects">          <div className="section-heading">
+<div>
+<div className="eyebrow">Selected work</div>
+<h2>Projects</h2>
+</div>
+<p className="section-note">Whatever the project, I look at it the same way: does it work, and does it work for the people using it. Browse by type or open any project to see how it was built and tested.</p>
+</div>          <ProjectCarousel projects={projects} />        </section>        <section className="section" id="education">
+  <div className="section-heading"><div><div className="eyebrow">Learning never stops</div><h2>Education</h2></div><p className="section-note">I built my technical foundation through a BCA and I'm now deepening it with an MCA, while a French diploma shows I enjoy learning beyond my main field.</p></div>
+  <div className="education-compact">
+    <article className="education-entry"><div className="education-entry-top"><span className="education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3.5 3 8.5 3 12 0v-5M22 9v6"/></svg></span><span className="education-level">POSTGRADUATE</span></div><div className="education-entry-main"><div><h3>Master of Computer Applications</h3><p>Chandigarh University</p></div><span className="education-status">2026 - 2028</span></div></article>
+    <article className="education-entry"><div className="education-entry-top"><span className="education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4M7 8h10m-10 4h6"/></svg></span><span className="education-level">UNDERGRADUATE</span></div><div className="education-entry-main"><div><h3>Bachelor of Computer Applications</h3><p>CCS University, Sahibabad</p></div><span className="education-status">2022 - 2025</span></div></article>
+    <article className="education-entry"><div className="education-entry-top"><span className="education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 5.5A7 7 0 0 1 12 7a7 7 0 0 1 9-1.5V19a7 7 0 0 0-9 1.5A7 7 0 0 0 3 19V5.5Z"/><path d="M12 7v13.5M6 10h3m9 0h-3"/></svg></span><span className="education-level">LANGUAGE STUDY</span></div><div className="education-entry-main"><div><h3>Diploma in French</h3><p>Delhi University</p></div><span className="education-status">2023 - 2025</span></div></article>
+    <article className="education-entry education-school"><div className="education-entry-top"><span className="education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21V8l9-5 9 5v13M2 21h20M8 21v-6h8v6M7 10h2m6 0h2m-10 3h2m6 0h2"/></svg></span><span className="education-level">SCHOOL EDUCATION</span></div><div className="education-entry-main"><div><h3>Secondary &amp; Senior Secondary</h3><p><span><b>Class X</b> | CBSE</span><span><b>Class XII</b> | CBSE</span></p></div><span className="education-status">Completed</span></div></article>
+  </div>
+</section><ContactSection />      </div>    </main>  );}
