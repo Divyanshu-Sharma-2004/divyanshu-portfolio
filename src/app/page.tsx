@@ -22,26 +22,8 @@ export default function Home() {  return (    <main className="page-shell">     
 <svg viewBox="0 0 24 24" aria-hidden="true">
 <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
 </svg>
-</a>              </div>            </div>          </div>          <figure className="hero-portrait">            <img src="/Divyanshu.png" alt="Portrait of Divyanshu Sharma" />          </figure>        </section>        <section className="section" id="about">          <div className="section-heading">            <div>
-<div className="eyebrow">A little about me</div>
-<h2>Curious by nature.<br />Careful by practice.</h2>
-</div>            <p className="section-note">A quick look at the experience, learning, and tools shaping my work in quality assurance.</p>          </div>          <p className="about-intro">I&apos;m a quality assurance professional with experience in manual software testing, technical writing, and Java development. In my current role, I test an AI application across local, cloud, and network model setups, checking workflows, edge cases, and fixes. I&apos;m also pursuing my MCA at Chandigarh University.</p>          <div className="about-cards" aria-label="About me highlights">            <article className="about-card">              <span className="about-card-number">01 / EDUCATION</span>              <h3>Learning with purpose</h3>              <ul>
-<li>MCA — Chandigarh University</li>
-<li>BCA — CCS University</li>
-<li>Diploma in French — Delhi University</li>
-</ul>            </article>            <article className="about-card">              <span className="about-card-number">02 / EXPERIENCE</span>              <h3>Quality across the process</h3>              <ul>
-<li>Manual Testing Intern — Codeacious Technologies</li>
-<li>Technical Writer — Aryson Technologies</li>
-<li>Java Web Programming Trainee — Anudip Foundation</li>
-</ul>            </article>            <article className="about-card">              <span className="about-card-number">03 / TECH STACK</span>              <h3>Tools I work with</h3>              <ul>
-<li>Java — HTML — CSS — JavaScript</li>
-<li>JDBC — Hibernate — JSP — Servlets</li>
-<li>Jira — Ollama — vLLM</li>
-</ul>            </article>            <article className="about-card">              <span className="about-card-number">04 / LANGUAGES</span>              <h3>Communication matters</h3>              <ul>
-<li>English</li>
-<li>Hindi</li>
-<li>French — diploma studies</li>
-</ul>            </article>          </div>        </section>        <section className="section" id="skills">          <div className="skills-heading">
+</a>              </div>            </div>          </div>          <figure className="hero-portrait">            <img src="/Divyanshu.png" alt="Portrait of Divyanshu Sharma" />          </figure>        </section>
+        <section className="section" id="skills">          <div className="skills-heading">
 <div className="skills-title">
 <div className="eyebrow eyebrow-no-rule">What I bring</div>
 <h2>Skills <span>&amp; toolkit</span>
