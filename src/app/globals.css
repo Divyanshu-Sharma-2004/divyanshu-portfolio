@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 :root {
   color-scheme: light;
@@ -361,4 +361,3 @@ h1 span { color: var(--green); }
 @media (max-width: 760px) { .header-end { margin-left: auto; } .header-controls { margin-left: 0; } }
 
 @media (prefers-reduced-motion: reduce) { .hero-portrait { animation: none; } }
-
